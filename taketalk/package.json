@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "taketalk@https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "taketalk@>=0.1.0 <0.2.0",
+  "_id": "taketalk@0.1.1",
+  "_inCache": true,
+  "_location": "/taketalk",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "taketalk",
+    "raw": "taketalk@https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yosay"
+  ],
+  "_resolved": "https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+  "_shasum": "00aab561a0e3ae948564b2168245bcaf72d61519",
+  "_shrinkwrap": null,
+  "_spec": "taketalk@https://registry.npmjs.org/taketalk/-/taketalk-0.1.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Stephen Sawchuk"
+  },
+  "bugs": {
+    "url": "https://github.com/stephenplusplus/taketalk/issues"
+  },
+  "dependencies": {
+    "get-stdin": "^0.1.0",
+    "minimist": "^0.1.0"
+  },
+  "description": "Take talk.",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "homepage": "https://github.com/stephenplusplus/taketalk",
+  "keywords": [
+    "bin",
+    "cli",
+    "node",
+    "npm"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "taketalk",
+  "optionalDependencies": {},
+  "readme": "# taketalk\n> ever wanted a bin for your node module?\n\n## Installation & Usage\n```sh\n$ npm install --save taketalk\n```\n\n```js\n#!/usr/bin/env node\n\nrequire('taketalk')({\n  init: function (input, options) {\n    console.log('This is the input from the CLI:', input);\n    console.log('These are the options passed:', options);\n  },\n\n  help: 'Help yaself!' || function () {\n    console.log('Print this when a user wants help.');\n  },\n\n  version: '0.1.1' || function () {\n    console.log('Print this when a user asks for the version.');\n  }\n});\n```\n\n## License\n[MIT](http://opensource.org/licenses/MIT) © Stephen Sawchuk\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenplusplus/taketalk.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.1.1"
+}

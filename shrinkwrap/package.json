@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "shrinkwrap@https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "shrinkwrap@*",
+  "_id": "shrinkwrap@0.4.0",
+  "_inCache": true,
+  "_location": "/shrinkwrap",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "shrinkwrap",
+    "raw": "shrinkwrap@https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+  "_shasum": "91c49318fc665a14bb64324de82101cd02bc59b2",
+  "_shrinkwrap": null,
+  "_spec": "shrinkwrap@https://registry.npmjs.org/shrinkwrap/-/shrinkwrap-0.4.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Arnout Kazemier"
+  },
+  "bugs": {
+    "url": "https://github.com/3rd-Eden/shrinkwrap/issues"
+  },
+  "dependencies": {
+    "debug": "0.8.x",
+    "eventemitter3": "0.1.x",
+    "fusing": "0.2.x",
+    "npm-registry": "0.1.x"
+  },
+  "description": "npm shrinkwrap parser, generation and comparison",
+  "devDependencies": {},
+  "homepage": "https://github.com/3rd-Eden/shrinkwrap#readme",
+  "keywords": [
+    "npm",
+    "npmjs",
+    "shrinkwrap"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "shrinkwrap",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/3rd-Eden/shrinkwrap.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.0"
+}

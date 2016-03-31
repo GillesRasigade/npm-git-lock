@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "hubot-maps@https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-maps@0.0.2",
+  "_id": "hubot-maps@0.0.2",
+  "_inCache": true,
+  "_location": "/hubot-maps",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-maps",
+    "raw": "hubot-maps@https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+  "_shasum": "e2719b01061e5fda33631c79fadb6b857d1f9e36",
+  "_shrinkwrap": null,
+  "_spec": "hubot-maps@https://registry.npmjs.org/hubot-maps/-/hubot-maps-0.0.2.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "gkoo"
+  },
+  "bugs": {
+    "url": "https://github.com/gkoo/hubot-maps/issues"
+  },
+  "dependencies": {},
+  "description": "A Hubot script for searching maps and directions",
+  "devDependencies": {},
+  "homepage": "https://github.com/gkoo/hubot-maps#readme",
+  "keywords": [
+    "directions",
+    "google",
+    "hubot",
+    "hubot-scripts",
+    "maps"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-maps",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "readme": "Hubot Maps\n==========\nA Hubot script for searching maps and directions via Google\n\nUsage\n-----\n```\nhubot map me <query> - Returns a map view of the area returned by `query`.\nhubot directions from <origin> to <destination> - Returns a map and list of directions from origin to destination.\n```\n\nEnvironment Variables\n---------------------\nFollow the instructions for obtaining an API key here:\nhttps://developers.google.com/maps/documentation/javascript/tutorial#api_key\n\nOnce you have an API key, set it as the value for the HUBOT_GOOGLE_API_KEY environment variable.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gkoo/hubot-maps.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.2"
+}

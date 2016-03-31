@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      "hubot-github-repo-event-notifier@https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-github-repo-event-notifier@>=1.6.0 <2.0.0",
+  "_id": "hubot-github-repo-event-notifier@1.6.0",
+  "_inCache": true,
+  "_location": "/hubot-github-repo-event-notifier",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-github-repo-event-notifier",
+    "raw": "hubot-github-repo-event-notifier@https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+  "_shasum": "8b3a5196459721f8567244cdb1b463343cbc0134",
+  "_shrinkwrap": null,
+  "_spec": "hubot-github-repo-event-notifier@https://registry.npmjs.org/hubot-github-repo-event-notifier/-/hubot-github-repo-event-notifier-1.6.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "patcon@gittip"
+  },
+  "bugs": {
+    "url": "https://github.com/patcon/hubot-github-repo-event-notifier/issues"
+  },
+  "contributors": [
+    {
+      "name": "geekgonecrazy"
+    },
+    {
+      "name": "martinb3"
+    },
+    {
+      "name": "spajus@vinted"
+    },
+    {
+      "name": "parkr"
+    }
+  ],
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "querystring": "~0.2.0",
+    "url": "~0.7.9"
+  },
+  "description": "Notifies about any available GitHub repo event via webhook",
+  "devDependencies": {
+    "chai": "*",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "mocha": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "homepage": "https://github.com/patcon/hubot-github-repo-event-notifier#readme",
+  "keywords": [
+    "events",
+    "github",
+    "hubot",
+    "hubot-scripts",
+    "notifier",
+    "webhooks"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-github-repo-event-notifier",
+  "optionalDependencies": {},
+  "readme": "# Hubot: hubot-github-repo-event-notifier\n\nNotifies about any available GitHub repo event via webhook.\n\nSee [`src/github-repo-event-notifier.coffee`](src/github-repo-event-notifier.coffee) for full documentation.\n\n## Installation\n\nAdd **hubot-github-repo-event-notifier** to your `package.json` file:\n\n```json\n\"dependencies\": {\n  \"hubot\": \">= 2.5.1\",\n  \"hubot-scripts\": \">= 2.4.2\",\n  \"hubot-github-repo-event-notifier\": \">= 0.0.0\",\n  \"hubot-hipchat\": \"~2.5.1-5\",\n}\n```\n\nAdd **hubot-github-repo-event-notifier** to your `external-scripts.json`:\n\n```json\n[\"hubot-github-repo-event-notifier\"]\n```\n\nRun `npm install`\n\nWhen starting hubot you need to specify the events it will accept. This is done via the `HUBOT_GITHUB_EVENT_NOTIFIER_TYPES`\n\nEx:\n\n```\nHUBOT_GITHUB_EVENT_NOTIFIER_TYPES=pull_request,pull_request\n```\n\nIf you want you can specific events in the event types.\n\nEx:\n\n```\nHUBOT_GITHUB_EVENT_NOTIFIER_TYPES=pull_request:comment,pull_request:close\n```\n\n\n\n## Development Testing\n\nIdeally, you'd write tests and put them in our `test/` directory.\n\nIf you just want to mess around with some things, we've bundled a REPL for\nyou which has some fixture data and exposes the core functionality of the\nprocessing of events. To boot up the reply, launch `script/console`.\n\n* Sample payloads are available via the variable `eventPayloads`. It\n  contains a key for each event type, e.g. `pull_request` or `page_build`.\n* Each processing function is available via `actions`. This object contains\n  a key for each event type, e.g. `pull_request` or `page_build`. It takes\n  the payload object and the callback function as its parameters, in that\n  order.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patcon/hubot-github-repo-event-notifier.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.6.0"
+}

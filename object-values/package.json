@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      "object-values@https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "object-values@>=1.0.0 <2.0.0",
+  "_id": "object-values@1.0.0",
+  "_inCache": true,
+  "_location": "/object-values",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "object-values",
+    "raw": "object-values@https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yeoman-doctor"
+  ],
+  "_resolved": "https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+  "_shasum": "72af839630119e5b98c3b02bb8c27e3237158105",
+  "_shrinkwrap": null,
+  "_spec": "object-values@https://registry.npmjs.org/object-values/-/object-values-1.0.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "http://sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/object-values/issues"
+  },
+  "dependencies": {},
+  "description": "Get the values of an object",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/object-values#readme",
+  "keywords": [
+    "browser",
+    "obj",
+    "object",
+    "properties",
+    "val",
+    "values"
+  ],
+  "license": "MIT",
+  "name": "object-values",
+  "optionalDependencies": {},
+  "readme": "# object-values [![Build Status](https://travis-ci.org/sindresorhus/object-values.svg?branch=master)](https://travis-ci.org/sindresorhus/object-values)\n\n> Get the values of an object\n\nReturns an array of own enumerable property values of an object.\n\n\n## Install\n\n```sh\n$ npm install --save object-values\n```\n\n\n## Usage\n\n```js\nobjectValues({foo: 0, bar: 1});\n//=> [0, 1]\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/object-values.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.0"
+}

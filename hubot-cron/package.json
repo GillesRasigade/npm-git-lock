@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      "hubot-cron@https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-cron@>=0.2.9 <0.3.0",
+  "_id": "hubot-cron@0.2.9",
+  "_inCache": true,
+  "_location": "/hubot-cron",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-cron",
+    "raw": "hubot-cron@https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+  "_shasum": "dd8901ad4bec290f5e6385a3d1db4a0fcd2680ed",
+  "_shrinkwrap": null,
+  "_spec": "hubot-cron@https://registry.npmjs.org/hubot-cron/-/hubot-cron-0.2.9.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Tatsuhiko Miyagawa"
+  },
+  "bugs": {
+    "url": "https://github.com/miyagawa/hubot-cron/issues"
+  },
+  "dependencies": {
+    "coffee-script": ">= 1.1.0",
+    "cron": ">= 1.0.1"
+  },
+  "description": "Cron job messaging for hubot",
+  "devDependencies": {},
+  "homepage": "https://github.com/miyagawa/hubot-cron",
+  "keywords": [
+    "cron",
+    "hubot"
+  ],
+  "license": "MIT",
+  "main": "./src/index.coffee",
+  "name": "hubot-cron",
+  "optionalDependencies": {},
+  "readme": "# hubot-cron\n\nhubot-cron adds a cronjob system to hubot to schedule messages on a specific date and time.\n\n## Installation\n\nAdd `hubot-cron` to your package.json, run `npm install` and add hubot-cron to `external-scripts.json`.\n\nAdd hubot-cron to your `package.json` dependencies.\n\n```\n\"dependencies\": {\n  \"hubot-cron\": \">= 0.1.0\"\n}\n```\n\nAdd `hubot-cron` to `external-scripts.json`.\n\n```\n> cat external-scripts.json\n> [\"hubot-cron\"]\n```\n\nIf you want to specify timezones, you'll need to install the [time](https://github.com/TooTallNate/node-time) module or place an entry for it in your package.json file.\n\n    npm install time\n\n## Usage\n\n```\nmiyagawa> hubot new job 0 9 * * 1-5 \"Good morning everyone!\"\nhubot> Job 12345 created\n\nmiyagawa> hubot list jobs\nhubot> (list of jobs)\n\nmiyagawa> hubot rm job 12345\nhubot> Job 12345 removed\n\nmiyagawa> hubot tz job 12345 America/Los_Angeles\nhubot> Job 12345 updated to use America/Los_Angeles\n```\n\nYou can use any [node-cron](https://github.com/ncb000gt/node-cron) compatible crontab format to schedule messages. Registered message will be sent to the same channel where you created a job.\n\nTo persist the cron job in the hubot restart, you're recommended to use redis to persist Hubot brain.\n\nTimezones are specified in [tzdata format](https://en.wikipedia.org/wiki/Tz_database#Examples).\n\n## See Also\n\n`reminder.coffee` in hubot-scripts.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/miyagawa/hubot-cron.git"
+  },
+  "version": "0.2.9"
+}

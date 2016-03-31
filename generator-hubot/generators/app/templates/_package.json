@@ -1,0 +1,16 @@
+{
+  "name": "<%= botName %>",
+  "version": "0.0.0",
+  "private": true,
+
+  "author": "<%= botOwner %>",
+
+  "description": "<%= botDescription %>",
+
+  "dependencies": {
+  },
+
+  "engines": {
+    "node": "0.10.x"
+  }
+}

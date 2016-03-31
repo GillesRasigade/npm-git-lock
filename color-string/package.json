@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      "color-string@https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "color-string@>=0.2.0 <0.3.0",
+  "_id": "color-string@0.2.4",
+  "_inCache": true,
+  "_location": "/color-string",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "color-string",
+    "raw": "color-string@https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+    "rawSpec": "https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/color"
+  ],
+  "_resolved": "https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+  "_shasum": "221ff64234f71aaa3e13bc8c7e8c95f3cdd8f81a",
+  "_shrinkwrap": null,
+  "_spec": "color-string@https://registry.npmjs.org/color-string/-/color-string-0.2.4.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "fayearthur@gmail.com",
+    "name": "Heather Arthur"
+  },
+  "bugs": {
+    "url": "https://github.com/harthur/color-string/issues"
+  },
+  "contributors": "Dyma Ywanov <dfcreative@gmail.com>",
+  "dependencies": {
+    "color-name": "1.0.x"
+  },
+  "description": "Parser and generator for CSS color strings",
+  "devDependencies": {
+    "browserify": ">=1.0.0",
+    "grunt": "^0.4.5",
+    "uglify-js": "1.0.x"
+  },
+  "homepage": "https://github.com/harthur/color-string#readme",
+  "keywords": [
+    "color",
+    "colour",
+    "css",
+    "rgb"
+  ],
+  "main": "./color-string",
+  "name": "color-string",
+  "optionalDependencies": {},
+  "readme": "# color-string\ncolor-string is a library for parsing and generating CSS color strings.\n\n#### parsing:\n```javascript\ncolorString.getRgb(\"#FFF\")  // [255, 255, 255]\ncolorString.getRgb(\"blue\")  // [0, 0, 255]\n\ncolorString.getRgba(\"rgba(200, 60, 60, 0.3)\")    // [200, 60, 60, 0.3]\ncolorString.getRgba(\"rgb(200, 200, 200)\")        // [200, 200, 200, 1]\n\ncolorString.getHsl(\"hsl(360, 100%, 50%)\")        // [360, 100, 50]\ncolorString.getHsla(\"hsla(360, 60%, 50%, 0.4)\")  // [360, 60, 50, 0.4]\n\ncolorString.getAlpha(\"rgba(200, 0, 12, 0.6)\")    // 0.6\n```\n#### generating:\n```javascript\ncolorString.hexString([255, 255, 255])   // \"#FFFFFF\"\ncolorString.rgbString([255, 255, 255])   // \"rgb(255, 255, 255)\"\ncolorString.rgbString([0, 0, 255, 0.4])  // \"rgba(0, 0, 255, 0.4)\"\ncolorString.rgbString([0, 0, 255], 0.4)  // \"rgba(0, 0, 255, 0.4)\"\ncolorString.percentString([0, 0, 255])   // \"rgb(0%, 0%, 100%)\"\ncolorString.keyword([255, 255, 0])       // \"yellow\"\ncolorString.hslString([360, 100, 100])   // \"hsl(360, 100%, 100%)\"\n```\n\n# Install\n\n### node\nFor [node](http://nodejs.org) with [npm](http://npmjs.org):\n\n\tnpm install color-string\n\n### browser\nDownload the latest [color-string.js](https://github.com/harthur/color-string/tree/gh-pages). The `colorString` object is exported.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/harthur/color-string.git"
+  },
+  "scripts": {
+    "test": "node test/basic.js"
+  },
+  "version": "0.2.4"
+}

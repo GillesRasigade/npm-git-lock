@@ -1,0 +1,78 @@
+{
+  "_args": [
+    [
+      "slack-client@https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "slack-client@>=1.4.0 <1.5.0",
+  "_id": "slack-client@1.4.1",
+  "_inCache": true,
+  "_location": "/slack-client",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "slack-client",
+    "raw": "slack-client@https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/hubot-slack"
+  ],
+  "_resolved": "https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+  "_shasum": "b6de417e24e5cf270108eed1730cc2ddc8bc64af",
+  "_shrinkwrap": null,
+  "_spec": "slack-client@https://registry.npmjs.org/slack-client/-/slack-client-1.4.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Slack Technologies, Inc."
+  },
+  "bugs": {
+    "url": "http://github.com/slackhq/node-slack-client/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.9.0",
+    "log": "1.4.0",
+    "ws": "0.4.31"
+  },
+  "description": "A library for creating a full Slack client",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.12.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-release": "~0.6.0",
+    "grunt-shell": "~0.5.0",
+    "mocha": "~1.13.0",
+    "should": "~2.0.2"
+  },
+  "engines": {
+    "node": ">= 0.10.x",
+    "npm": ">= 1.1.x"
+  },
+  "homepage": "https://github.com/slackhq/node-slack-client#readme",
+  "keywords": [
+    "slack"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/slackhq/node-slack-client/raw/master/LICENSE"
+    }
+  ],
+  "main": "./index",
+  "name": "slack-client",
+  "optionalDependencies": {},
+  "readme": "# Node.js Slack Client Library\n\n## Travis-CI Build Status\n\n[![Build Status](https://travis-ci.org/slackhq/node-slack-client.png?branch=master)](https://travis-ci.org/slackhq/node-slack-client)\n\n## Description\n\nThis is a Slack client library for Node.js. It is intended to expose all of the functionality of [Slack's Real Time Messaging API](https://api.slack.com/rtm) while providing some common abstractions and generally making your life easier, if you want it to.\n\nThis code has been built to support our [hubot-slack](https://github.com/slackhq/hubot-slack) adapter. Most other functionality isn't yet supported, and documentation is minimal, at best. A simple example of how to use this module from Node.js can be found in the `examples` directory.\n\n## Contribute\n\nHere's the most direct way to get your work merged into the project.\n\n1. Fork the project\n2. Clone down your fork\n3. Create a feature branch\n4. Hack away and add tests, not necessarily in that order\n5. Make sure everything still passes by running tests\n6. If necessary, rebase your commits into logical chunks without errors\n7. Add yourself to package.json as a contributor\n8. Push the branch up to your fork\n9. Send a pull request for your branch\n\n## Copyright\n\nCopyright &copy; Slack Technologies, Inc. MIT License; see LICENSE for further details.\n\n## TODOs\n\n1. Better/any timeouts on initial websocket connection\n2. Better/any timeouts on API calls\n3. Document the connection options, etc\n4. Emit more events around unreads and mentions\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/slackhq/node-slack-client.git"
+  },
+  "scripts": {
+    "prepublish": "grunt prepublish",
+    "test": "mocha --compilers coffee:coffee-script/register --reporter spec"
+  },
+  "version": "1.4.1"
+}

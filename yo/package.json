@@ -1,0 +1,143 @@
+{
+  "_args": [
+    [
+      "yo@https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "yo@>=1.6.0 <2.0.0",
+  "_id": "yo@1.7.0",
+  "_inCache": true,
+  "_location": "/yo",
+  "_phantomChildren": {
+    "ansi-escapes": "1.3.0",
+    "cli-cursor": "1.0.2",
+    "cli-width": "1.1.1",
+    "code-point-at": "1.0.0",
+    "escape-string-regexp": "1.0.5",
+    "figures": "1.5.0",
+    "get-stdin": "4.0.1",
+    "is-fullwidth-code-point": "1.0.0",
+    "minimist": "1.2.0",
+    "pad-component": "0.0.1",
+    "repeating": "2.0.0",
+    "run-async": "0.1.0",
+    "rx-lite": "3.1.2",
+    "string-width": "1.0.1",
+    "through": "2.3.8"
+  },
+  "_requested": {
+    "name": "yo",
+    "raw": "yo@https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+  "_shasum": "eb354d2e40dd0ac50277bfa7177a4470897a8655",
+  "_shrinkwrap": null,
+  "_spec": "yo@https://registry.npmjs.org/yo/-/yo-1.7.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Yeoman"
+  },
+  "bin": {
+    "yo": "lib/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/yeoman/yo/issues"
+  },
+  "dependencies": {
+    "async": "^1.0.0",
+    "chalk": "^1.0.0",
+    "cli-list": "^0.1.1",
+    "configstore": "^1.0.0",
+    "cross-spawn-async": "^2.0.0",
+    "figures": "^1.3.5",
+    "fullname": "^2.0.0",
+    "got": "^5.0.0",
+    "humanize-string": "^1.0.0",
+    "inquirer": "^0.11.0",
+    "insight": "^0.7.0",
+    "lodash": "^3.2.0",
+    "meow": "^3.0.0",
+    "npm-keyword": "^4.1.0",
+    "opn": "^3.0.2",
+    "package-json": "^2.1.0",
+    "read-pkg-up": "^1.0.1",
+    "repeating": "^2.0.0",
+    "root-check": "^1.0.0",
+    "sort-on": "^1.0.0",
+    "string-length": "^1.0.0",
+    "titleize": "^1.0.0",
+    "update-notifier": "^0.6.0",
+    "user-home": "^2.0.0",
+    "yeoman-character": "^1.0.0",
+    "yeoman-doctor": "^2.0.0",
+    "yeoman-environment": "^1.5.0",
+    "yosay": "^1.0.0"
+  },
+  "description": "CLI tool for running Yeoman generators",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-coveralls": "^0.1.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.9.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "mocha": "^2.1.0",
+    "mockery": "^1.4.0",
+    "nock": "^2.0.1",
+    "nsp": "^2.2.0",
+    "proxyquire": "^1.0.1",
+    "registry-url": "^3.0.0",
+    "sinon": "^1.12.1"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/yeoman/yo#readme",
+  "keywords": [
+    "app",
+    "boilerplate",
+    "build",
+    "cli",
+    "cli-app",
+    "dev",
+    "development",
+    "front-end",
+    "generate",
+    "generator",
+    "scaffold",
+    "stack",
+    "tool",
+    "web",
+    "yeoman"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "lib/index.js",
+  "name": "yo",
+  "optionalDependencies": {},
+  "readme": "# yo [![npm](https://badge.fury.io/js/yo.svg)](http://badge.fury.io/js/yo) [![Build Status](https://travis-ci.org/yeoman/yo.svg?branch=master)](https://travis-ci.org/yeoman/yo) [![Coverage Status](https://coveralls.io/repos/yeoman/yo/badge.svg)](https://coveralls.io/r/yeoman/yo) [![](https://img.shields.io/badge/unicorn-approved-ff69b4.svg)](https://www.youtube.com/watch?v=9auOCbH5Ns4) [![Gitter](https://img.shields.io/badge/Gitter-Join_the_Yeoman_chat_%E2%86%92-00d06f.svg)](https://gitter.im/yeoman/yeoman) [![OpenCollective](https://opencollective.com/yeoman/badge/backers.svg)](https://opencollective.com/yeoman#support)\n\n[![](https://raw.githubusercontent.com/yeoman/media/master/optimized/yeoman-masthead.png)](http://yeoman.io)\n\n<img src=\"screenshot.png\" width=\"569\">\n\n\n## What's Yeoman?\n\nYeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive.\n\nTo do so, we provide a [generator ecosystem](http://yeoman.io/generators/). A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts.\n\n\n## Usage\n\n```sh\n# install yo\nnpm install --global yo\n\n# install a generator\nnpm install --global generator-webapp\n\n# run it\nyo webapp\n```\n\n*To create and distribute your own generator, refer to [our official documentation](http://yeoman.io/authoring/)*\n\n\n## Options\n\n- `--no-color` - Disable colors.\n- `--version` - Print the current `yo` version.\n- `--help` - Print `yo` help menu with the list of found generators.\n- `--[no-]insight` - Toggle anonymous [Insight](https://github.com/yeoman/insight) tracking which helps us improve Yeoman. Using either of these flags on the first run will prevent you from being prompted about it interactively. The flags can also be used to change it later on.\n- `--generators` - Print available generators.\n\n\n## Troubleshooting\n\nRunning `yo doctor` command can help you troubleshoot common issues.\n\nIf `doctor` doesn't help, then check opened issues for a similar problem. Open a new issue if your problem haven't been reported yet. Make sure to always include the version of `yo` (`yo --version`) and Node.js (`node --version`) you use.\n\nIf your issue only occurs using a generator, please report the issues on the generator's repository.\n\n\n## Contribute\n\nSee the [contributing docs](http://yeoman.io/contributing/).\n\n\n## Changelog\n\nSee the [release page](https://github.com/yeoman/yo/releases).\n\n## Backers\nLove Yeoman work and community? Help us keep it alive by donating funds to cover project expenses! <br />\n[[Become a backer](https://opencollective.com/yeoman#support)]\n\n  <a href=\"https://opencollective.com/yeoman/backers/0/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/0/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/1/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/1/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/2/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/2/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/3/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/3/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/4/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/4/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/5/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/5/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/6/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/6/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/7/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/7/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/8/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/8/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/9/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/9/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/10/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/10/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/11/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/11/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/12/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/12/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/13/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/13/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/14/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/14/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/15/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/15/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/16/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/16/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/17/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/17/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/18/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/18/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/19/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/19/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/20/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/20/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/21/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/21/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/22/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/22/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/23/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/23/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/24/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/24/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/25/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/25/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/26/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/26/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/27/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/27/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/28/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/28/avatar\">\n  </a>\n  <a href=\"https://opencollective.com/yeoman/backers/29/website\" target=\"_blank\">\n    <img src=\"https://opencollective.com/yeoman/backers/29/avatar\">\n  </a>\n\n\n## License\n\nBSD-2-Clause © Google\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeoman/yo.git"
+  },
+  "scripts": {
+    "postinstall": "yodoctor",
+    "postupdate": "yodoctor",
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "version": "1.7.0"
+}

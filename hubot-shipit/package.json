@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      "hubot-shipit@https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-shipit@>=0.2.0 <0.3.0",
+  "_id": "hubot-shipit@0.2.0",
+  "_inCache": true,
+  "_location": "/hubot-shipit",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-shipit",
+    "raw": "hubot-shipit@https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+  "_shasum": "1957c7757cccce64a7c51f7eed4b4bd54e4a52ae",
+  "_shrinkwrap": null,
+  "_spec": "hubot-shipit@https://registry.npmjs.org/hubot-shipit/-/hubot-shipit-0.2.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "technicalpickles@github.com",
+    "name": "Josh Nichols"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-shipit/issues"
+  },
+  "dependencies": {},
+  "description": "A hubot script that provides easy access to the shipit squirrel and its kin",
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-release": "~0.6.0",
+    "hubot": "2.x",
+    "matchdep": "~0.1.2"
+  },
+  "homepage": "https://github.com/hubot-scripts/hubot-shipit#readme",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-shipit",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "readme": "# hubot-shipit\n\nA hubot script that provides easy access to the shipit squirrel and its kin.\n\nSee [`src/shipit.coffee`](src/shipit.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-shipit --save`\n\nThen add **hubot-shipit** to your `external-scripts.json`:\n\n```json\n[\n  \"hubot-shipit\"\n]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot ship it\nhubot>> https://img.skitch.com/20111026-r2wsngtu4jftwxmsytdke6arwd.png\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-shipit.git"
+  },
+  "scripts": {
+    "test": "true"
+  },
+  "version": "0.2.0"
+}

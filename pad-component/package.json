@@ -1,0 +1,54 @@
+{
+  "_args": [
+    [
+      "pad-component@https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "pad-component@0.0.1",
+  "_id": "pad-component@0.0.1",
+  "_inCache": true,
+  "_location": "/pad-component",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "pad-component",
+    "raw": "pad-component@https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yo/yosay",
+    "/yosay"
+  ],
+  "_resolved": "https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+  "_shasum": "ad1f22ce1bf0fdc0d6ddd908af17f351a404b8ac",
+  "_shrinkwrap": null,
+  "_spec": "pad-component@https://registry.npmjs.org/pad-component/-/pad-component-0.0.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "tj@vision-media.ca",
+    "name": "TJ Holowaychuk"
+  },
+  "component": {
+    "scripts": {
+      "pad/index.js": "index.js"
+    }
+  },
+  "dependencies": {},
+  "description": "Pad strings to a given length",
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "pad",
+    "string"
+  ],
+  "name": "pad-component",
+  "optionalDependencies": {},
+  "readme": "\n# pad\n\n  Trims string whitespace.\n\n## Installation\n\n```\n$ npm install pad-component\n$ component install component/pad\n```\n\n## API\n\n### pad(str, len[, char])\n\n  Pad `str` on both sides to the given `len`, with optional `char`\n  defaulting to a space.\n\n### pad.left(str, len[, char])\n\n  Pad `str` on the left to the given `len` with optional `char`.\n\n### pad.right(str, len[, char])\n\n  Pad `str` on the right to the given `len` with optional `char`.\n\n## License \n\n  MIT\n",
+  "readmeFilename": "Readme.md",
+  "version": "0.0.1"
+}

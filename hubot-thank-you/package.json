@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "hubot-thank-you@https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-thank-you@0.0.3",
+  "_id": "hubot-thank-you@0.0.3",
+  "_inCache": true,
+  "_location": "/hubot-thank-you",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-thank-you",
+    "raw": "hubot-thank-you@https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+  "_shasum": "2eab4f21675de7c321b7a844d43c41a795afa309",
+  "_shrinkwrap": null,
+  "_spec": "hubot-thank-you@https://registry.npmjs.org/hubot-thank-you/-/hubot-thank-you-0.0.3.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "videla.lucas@gmail.com",
+    "name": "Lucas Videla"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-thank-you/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "description": "A hubot script that accepts thanks",
+  "devDependencies": {
+    "chai": "*",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "mocha": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "homepage": "https://github.com/hubot-scripts/hubot-thank-you#readme",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-thank-you",
+  "optionalDependencies": {},
+  "readme": "# hubot-thank-you\n\nA hubot script that accepts your thanks\n\nSee [`src/thank-you.coffee`](src/thank-you.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-thank-you --save`\n\nThen add **hubot-thank-you** to your `external-scripts.json`:\n\n```json\n[\"hubot-thank-you\"]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot thank you\nhubot>> don’t mention it\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-thank-you.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "0.0.3"
+}

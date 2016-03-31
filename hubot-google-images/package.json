@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "hubot-google-images@https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-google-images@>=0.2.6 <0.3.0",
+  "_id": "hubot-google-images@0.2.6",
+  "_inCache": true,
+  "_location": "/hubot-google-images",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-google-images",
+    "raw": "hubot-google-images@https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+  "_shasum": "dd9f7032b8242e295c432ddbe91e438a3c7cab54",
+  "_shrinkwrap": null,
+  "_spec": "hubot-google-images@https://registry.npmjs.org/hubot-google-images/-/hubot-google-images-0.2.6.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "technicalpickles@github.com",
+    "name": "Josh Nichols"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-google-images/issues"
+  },
+  "dependencies": {},
+  "description": "A hubot script that interacts with the Google Images API.",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "coffee-script": "1.6.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-mocha-test": "~0.12.7",
+    "grunt-release": "~0.11.0",
+    "hubot": "2.x",
+    "matchdep": "~0.3.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  },
+  "homepage": "https://github.com/hubot-scripts/hubot-google-images#readme",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-google-images",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "readme": "# hubot-google-images\n\nA hubot script that interacts with the Google Custom Search API for greater\nproductivity and lulz.\n\nSee [`src/google-images.coffee`](src/google-images.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-google-images --save`\n\nThen add **hubot-google-images** to your `external-scripts.json`:\n\n```json\n[\n  \"hubot-google-images\"\n]\n```\n\n## Configuration\n\n### Custom Search Engine\nGoogle no longer offers an unregistered image search API. You must set up a\n[Google Custom Search API](https://developers.google.com/custom-search/docs/overview) and set\nthe environment variables `HUBOT_GOOGLE_CSE_ID` and `HUBOT_GOOGLE_CSE_KEY`.\n\nThe Custom Search API provides up to [100 search queries per day](https://developers.google.com/custom-search/json-api/v1/overview) for free.\nIf you need more than that you'll have to pay.\n\n#### CSE setup details\n1. Create a CSE via these [instructions](https://developers.google.com/custom-search/docs/tutorial/creatingcse).\n2. Turn on images in Edit Search Engine > Setup > Basic > Image Search\n3. Get the CSE ID in Edit Search Engine > Setup > Basic > Details (via [these instructions](https://support.google.com/customsearch/answer/2649143?hl=en))\n4. Get the CSE KEY here https://code.google.com/apis/console\n5. Update your conf (and your modules if necessary)\n\n### Custom Mustachification Service\n\nTo enable the `mustache me` feature, set the environment variable  `HUBOT_MUSTACHIFY_URL`\nto your mustachify server url. More info and the source code of mustachify can be\nfound at [https://github.com/afeld/mustachio](https://github.com/afeld/mustachio)\n\n### Listen for `image me` and `animate me`\n\nIf you want to have your bot respond to any chat that begins with `image me` or\n`animate me`, you can add `HUBOT_GOOGLE_IMAGES_HEAR` to a non-empty value to\nhave the robot listen to all chat.\n\n## Sample Interaction\n\n```\nuser1>> hubot image me bananas\nhubot>> http://upload.wikimedia.org/wikipedia/commons/4/4c/Bananas.jpg\nuser2>> hubot animate me it's happening\nhubot>> http://i.kinja-img.com/gawker-media/image/upload/s--8U6TKXoi--/thfydh8egnt8he5esoz8.gif\nuser3>> hubot mustache me family portrait\nhubot>> http://mustachify.me/1?src=http://www.daviddanielsphotography.com/wp-content/uploads/2013/03/Chowen-Family-Portraits-east-of-Park-City-13.jpg\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-google-images.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "0.2.6"
+}

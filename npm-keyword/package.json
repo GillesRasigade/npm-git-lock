@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "npm-keyword@https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "npm-keyword@>=4.1.0 <5.0.0",
+  "_id": "npm-keyword@4.2.0",
+  "_inCache": true,
+  "_location": "/npm-keyword",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "npm-keyword",
+    "raw": "npm-keyword@https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yo"
+  ],
+  "_resolved": "https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+  "_shasum": "98ffebfdbb1336f27ef5fe1baca0dcacd0acf6c0",
+  "_shrinkwrap": null,
+  "_spec": "npm-keyword@https://registry.npmjs.org/npm-keyword/-/npm-keyword-4.2.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/npm-keyword/issues"
+  },
+  "dependencies": {
+    "got": "^5.0.0",
+    "object-assign": "^4.0.1",
+    "pinkie-promise": "^2.0.0",
+    "registry-url": "^3.0.3"
+  },
+  "description": "Get a list of npm packages with a certain keyword",
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/npm-keyword#readme",
+  "keywords": [
+    "find",
+    "keyword",
+    "npm",
+    "package",
+    "packages",
+    "pkg",
+    "registry",
+    "search"
+  ],
+  "license": "MIT",
+  "name": "npm-keyword",
+  "optionalDependencies": {},
+  "readme": "# npm-keyword [![Build Status](https://travis-ci.org/sindresorhus/npm-keyword.svg?branch=master)](https://travis-ci.org/sindresorhus/npm-keyword)\n\n> Get a list of npm packages with a certain keyword\n\n\n## Install\n\n```\n$ npm install --save npm-keyword\n```\n\n\n## Usage\n\n```js\nconst npmKeyword = require('npm-keyword');\n\nnpmKeyword('gulpplugin').then(packages => {\n\tconsole.log(packages);\n\t//=> [{name: 'gulp-autoprefixer', description: '...'}, ...]\n});\n\nnpmKeyword.names('gulpplugin').then(packageNames => {\n\tconsole.log(packageNames);\n\t//=> ['gulp-autoprefixer', ...]\n});\n\nnpmKeyword.count('gulpplugin').then(count => {\n\tconsole.log(count);\n\t//=> 1930\n});\n```\n\n\n## API\n\n### npmKeyword(keyword)\n\nReturns a promise for a list of packages having the specified keyword in their package.json `keyword` property.\n\n### npmKeyword.names(keyword)\n\nReturns a promise for a list of package names. Use this if you don't need the description as it's faster.\n\n### npmKeyword.count(keyword)\n\nReturns a promise for the count of packages.\n\n## Related\n\n- [package-json](https://github.com/sindresorhus/package-json) - Get the package.json of a package from the npm registry\n- [npm-user](https://github.com/sindresorhus/npm-user) - Get user info of a npm user\n- [npm-email](https://github.com/sindresorhus/npm-email) - Get the email of a npm user\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/npm-keyword.git"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "version": "4.2.0",
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}

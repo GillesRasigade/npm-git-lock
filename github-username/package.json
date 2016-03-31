@@ -1,0 +1,91 @@
+{
+  "_args": [
+    [
+      "github-username@https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "github-username@>=1.0.0 <2.0.0",
+  "_id": "github-username@1.1.1",
+  "_inCache": true,
+  "_location": "/github-username",
+  "_phantomChildren": {
+    "duplexify": "3.4.3",
+    "infinity-agent": "2.0.3",
+    "is-stream": "1.0.1",
+    "lowercase-keys": "1.0.0",
+    "nested-error-stacks": "1.0.2",
+    "prepend-http": "1.0.3",
+    "readable-stream": "2.0.6",
+    "statuses": "1.2.1",
+    "timed-out": "2.0.0"
+  },
+  "_requested": {
+    "name": "github-username",
+    "raw": "github-username@https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yeoman-generator"
+  ],
+  "_resolved": "https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+  "_shasum": "b9b43d852db661fbe4c850cc756768c022a53a9e",
+  "_shrinkwrap": null,
+  "_spec": "github-username@https://registry.npmjs.org/github-username/-/github-username-1.1.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "github-username": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/github-username/issues"
+  },
+  "dependencies": {
+    "get-stdin": "^1.0.0",
+    "got": "^2.3.0"
+  },
+  "description": "Get a GitHub username from an email address",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/github-username#readme",
+  "keywords": [
+    "app",
+    "bin",
+    "cli",
+    "cli-app",
+    "email",
+    "gh",
+    "git",
+    "github",
+    "user",
+    "username"
+  ],
+  "license": "MIT",
+  "name": "github-username",
+  "optionalDependencies": {},
+  "readme": "# github-username [![Build Status](https://travis-ci.org/sindresorhus/github-username.svg?branch=master)](https://travis-ci.org/sindresorhus/github-username)\n\n> Get a GitHub username from an email address\n\n*Only works for users that have their email publicly listed on their profile.*\n\n\n## Install\n\n```sh\n$ npm install --save github-username\n```\n\n\n## Usage\n\n```js\nvar githubUsername = require('github-username');\n\ngithubUsername('sindresorhus@gmail.com', function (err, username) {\n\tconsole.log(username);\n\t//=> 'sindresorhus'\n});\n```\n\n\n## API\n\n### githubUsername(email, [token], callback)\n\n#### email\n\n*Required*  \nType: `string`\n\nEmail address for the user of whom you want the username.\n\n#### token\n\nType: `string`  \n\nGitHub [personal access token](https://github.com/settings/applications#personal-access-tokens).\n\n#### callback(err, username)\n\n\n## CLI\n\n```sh\n$ npm install --global github-username\n```\n\n```sh\n$ github-username --help\n\n  Usage\n    github-username <email> [--token OAUTH-TOKEN]\n    echo <email> | github-username\n\n  Example\n    github-username sindresorhus@gmail.com\n    sindresorhus\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/github-username.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.1.1"
+}

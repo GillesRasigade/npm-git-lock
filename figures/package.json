@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "figures@https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "figures@>=1.3.2 <2.0.0",
+  "_id": "figures@1.5.0",
+  "_inCache": true,
+  "_location": "/figures",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "figures",
+    "raw": "figures@https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/inquirer",
+    "/insight/inquirer",
+    "/yeoman-environment/inquirer",
+    "/yo",
+    "/yo/inquirer"
+  ],
+  "_resolved": "https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+  "_shasum": "56d8a0949c19643af764d573a648d384218da737",
+  "_shrinkwrap": null,
+  "_spec": "figures@https://registry.npmjs.org/figures/-/figures-1.5.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/figures/issues"
+  },
+  "dependencies": {},
+  "description": "Unicode symbols with Windows CMD fallbacks",
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/figures#readme",
+  "keywords": [
+    "char",
+    "characters",
+    "cli",
+    "cmd",
+    "command-line",
+    "fallback",
+    "figure",
+    "figures",
+    "symbol",
+    "symbols",
+    "unicode"
+  ],
+  "license": "MIT",
+  "name": "figures",
+  "optionalDependencies": {},
+  "readme": "# figures [![Build Status](https://travis-ci.org/sindresorhus/figures.svg?branch=master)](https://travis-ci.org/sindresorhus/figures)\n\n> Unicode symbols with Windows CMD fallbacks\n\n[![](screenshot.png)](index.js)\n\n[*and more...*](index.js)\n\nWindows CMD only supports a [limited character set](http://en.wikipedia.org/wiki/Code_page_437).\n\n\n## Install\n\n```\n$ npm install --save figures\n```\n\n\n## Usage\n\nSee the [source](index.js) for supported symbols.\n\n```js\nconst figures = require('figures');\n\nconsole.log(figures.tick);\n// On real OSes:  ✔︎\n// On Windows:    √\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/figures.git"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "version": "1.5.0"
+}

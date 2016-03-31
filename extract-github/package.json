@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      "extract-github@https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "extract-github@>=0.0.0 <0.1.0",
+  "_id": "extract-github@0.0.5",
+  "_inCache": true,
+  "_location": "/extract-github",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "extract-github",
+    "raw": "extract-github@https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+    "rawSpec": "https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/githulk",
+    "/npm-registry"
+  ],
+  "_resolved": "https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+  "_shasum": "f542536db8c19b983a3bec9db96d2ef2a5ff1a86",
+  "_shrinkwrap": null,
+  "_spec": "extract-github@https://registry.npmjs.org/extract-github/-/extract-github-0.0.5.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Arnout Kazemier"
+  },
+  "bugs": {
+    "url": "https://github.com/3rd-Eden/extract-github/issues"
+  },
+  "dependencies": {},
+  "description": "Extract the Github project / repository URL from a given object",
+  "devDependencies": {
+    "chai": "1.9.x",
+    "mocha": "1.17.x",
+    "pre-commit": "0.0.x"
+  },
+  "homepage": "https://github.com/3rd-Eden/extract-github",
+  "keywords": [
+    "extract",
+    "github",
+    "project",
+    "repo",
+    "repository",
+    "url",
+    "username"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "extract-github",
+  "optionalDependencies": {},
+  "readme": "# extract-github\n\n[![Build Status](https://travis-ci.org/3rd-Eden/extract-github.png)](https://travis-ci.org/3rd-Eden/extract-github)\n\nExtract a valid github URL from a given object. We make the assumption that the\ngiven object follows a `package.json` format as used by npm.\n\n## Installation\n\nThis module is released in the npm registry as `extract-github` and can therefor\nbe installed using:\n\n```\nnpm install --save extract-github\n```\n\n## Usage\n\nThis module was written to only do specific task and do that task well, and that\nis extracting github information. We therefor export as a single function:\n\n```js\n'use strict';\n\nvar extract = require('extract-github');\n```\n\nOnce you've required the module you can feed it the contents of a package.json\nto extract to github information.\n\n```js\nvar github = extract(require('./package.json'));\n```\n\nThe `github` variable should now contain an object with a `user` and `repo`\nproperty which can be re-used to create a new github URL. In addition to parsing\npackage.json's it also supports extracting github information out of `README` it\ncan do this by extracting Travis-CI badges or just plain ol matching github URL\nfrom the content.\n\n```js\nvar github = extract(require('fs').readFileSync(__dirname +'/README.md'));\n```\n\n## License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3rd-Eden/extract-github.git"
+  },
+  "scripts": {
+    "test": "mocha $(find test -name '*.test.js')"
+  },
+  "version": "0.0.5"
+}

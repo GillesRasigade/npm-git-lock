@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "decompress-targz@https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "decompress-targz@>=1.0.0 <2.0.0",
+  "_id": "decompress-targz@1.0.3",
+  "_inCache": true,
+  "_location": "/decompress-targz",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "decompress-targz",
+    "raw": "decompress-targz@https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+    "rawSpec": "https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/decompress"
+  ],
+  "_resolved": "https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+  "_shasum": "bf6db20667de8cd78e66526b72ac229bc81061e3",
+  "_shrinkwrap": null,
+  "_spec": "decompress-targz@https://registry.npmjs.org/decompress-targz/-/decompress-targz-1.0.3.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Mårtensson",
+    "url": "https://github.com/kevva"
+  },
+  "bugs": {
+    "url": "https://github.com/kevva/decompress-targz/issues"
+  },
+  "dependencies": {
+    "is-gzip": "^1.0.0",
+    "simple-bufferstream": "0.0.4",
+    "strip-dirs": "^0.1.1",
+    "tar": "^1.0.0"
+  },
+  "description": "decompress tar.gz plugin",
+  "devDependencies": {
+    "ava": "0.0.4",
+    "decompress": "^1.0.0",
+    "rimraf": "^2.2.8"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/kevva/decompress-targz#readme",
+  "keywords": [
+    "decompress",
+    "decompressplugin",
+    "extract",
+    "tar.gz",
+    "targz"
+  ],
+  "license": "MIT",
+  "name": "decompress-targz",
+  "optionalDependencies": {},
+  "readme": "# decompress-targz [![Build Status](https://travis-ci.org/kevva/decompress-targz.svg?branch=master)](https://travis-ci.org/kevva/decompress-targz)\n\n> tar.gz decompress plugin\n\n## Install\n\n```sh\n$ npm install --save decompress-targz\n```\n\n## Usage\n\n```js\nvar Decompress = require('decompress');\nvar targz = require('decompress-targz');\n\nvar decompress = new Decompress()\n    .src('foo.tar.gz')\n    .dest('destFolder')\n    .use(targz({ strip: 1 }));\n\ndecompress.decompress();\n```\n\n## Options\n\n### strip\n\nType: `Number`  \nDefault: `0`\n\nEquivalent to `--strip-components` for tar.\n\n## License\n\nMIT © [Kevin Mårtensson](https://github.com/kevva)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevva/decompress-targz.git"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "version": "1.0.3"
+}

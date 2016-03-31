@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      "archive-type@https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "archive-type@>=1.0.2 <2.0.0",
+  "_id": "archive-type@1.0.4",
+  "_inCache": true,
+  "_location": "/archive-type",
+  "_phantomChildren": {
+    "is-finite": "1.0.1",
+    "map-obj": "1.0.1",
+    "minimist": "1.2.0"
+  },
+  "_requested": {
+    "name": "archive-type",
+    "raw": "archive-type@https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+    "rawSpec": "https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/download"
+  ],
+  "_resolved": "https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+  "_shasum": "9791ee70d17c022e2d3880405bdbc8c2bb7115e9",
+  "_shrinkwrap": null,
+  "_spec": "archive-type@https://registry.npmjs.org/archive-type/-/archive-type-1.0.4.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Mårtensson",
+    "url": "https://github.com/kevva"
+  },
+  "bin": {
+    "archive-type": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/kevva/archive-type/issues"
+  },
+  "dependencies": {
+    "get-stdin": "^3.0.0",
+    "is-7zip": "^1.0.0",
+    "is-bzip2": "^1.0.0",
+    "is-gzip": "^1.0.0",
+    "is-rar": "^1.0.0",
+    "is-tar": "^1.0.0",
+    "is-zip": "^1.0.0",
+    "meow": "^2.0.0",
+    "read-chunk": "^1.0.0"
+  },
+  "description": "Detect the archive type of a Buffer/Uint8Array",
+  "devDependencies": {
+    "ava": "0.0.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "homepage": "https://github.com/kevva/archive-type#readme",
+  "keywords": [
+    "7zip",
+    "archive",
+    "buffer",
+    "bz2",
+    "bzip2",
+    "check",
+    "detect",
+    "gz",
+    "gzip",
+    "mime",
+    "rar",
+    "type",
+    "zip"
+  ],
+  "license": "MIT",
+  "name": "archive-type",
+  "optionalDependencies": {},
+  "readme": "# archive-type [![Build Status](https://travis-ci.org/kevva/archive-type.svg?branch=master)](https://travis-ci.org/kevva/archive-type)\n\n> Detect the archive type of a Buffer/Uint8Array\n\n\n## Install\n\n```sh\n$ npm install --save archive-type\n```\n\n## Usage\n\n```js\nvar archiveType = require('archive-type');\nvar read = require('fs').readFileSync;\n\narchiveType(read('foo.zip'));\n// => zip\n```\n\n\n## API\n\n### archiveType(buf)\n\nReturns [`7z`](https://github.com/kevva/is-7zip), [`bz2`](https://github.com/kevva/is-bzip2), [`gz`](https://github.com/kevva/is-gzip), [`rar`](https://github.com/kevva/is-rar), [`tar`](https://github.com/kevva/is-tar), [`zip`](https://github.com/kevva/is-zip) or `false`.\n\n#### buf\n\nType: `buffer` *(Node.js)*, `uint8array`\n\nIt only needs the first 261 bytes.\n\n## CLI\n\n```sh\n$ npm install --global archive-type\n```\n\n```sh\n$ archive-type --help\n\nUsage\n  $ archive-type <file>\n  $ cat <file> | archive-type\n\nExample\n  $ archive-type foo.tar.gz\n  $ cat foo.tar.gz | archive-type\n```\n\n\n## License\n\nMIT © [Kevin Mårtensson](https://github.com/kevva)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevva/archive-type.git"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "version": "1.0.4"
+}

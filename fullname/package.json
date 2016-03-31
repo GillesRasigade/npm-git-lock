@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      "fullname@https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "fullname@>=2.0.0 <3.0.0",
+  "_id": "fullname@2.1.0",
+  "_inCache": true,
+  "_location": "/fullname",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "fullname",
+    "raw": "fullname@https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yo"
+  ],
+  "_resolved": "https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+  "_shasum": "c46bf0f7c3f24fd5b3358d00e4a41380eef87350",
+  "_shrinkwrap": null,
+  "_spec": "fullname@https://registry.npmjs.org/fullname/-/fullname-2.1.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/fullname/issues"
+  },
+  "dependencies": {
+    "npmconf": "^2.1.1",
+    "pify": "^2.2.0",
+    "pinkie-promise": "^2.0.0"
+  },
+  "description": "Get the fullname of the current user",
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/fullname#readme",
+  "keywords": [
+    "first name",
+    "full",
+    "full name",
+    "fullname",
+    "gecos",
+    "given",
+    "name",
+    "pwuid",
+    "real",
+    "realname",
+    "surname",
+    "uid",
+    "user"
+  ],
+  "license": "MIT",
+  "name": "fullname",
+  "optionalDependencies": {},
+  "readme": "# fullname [![Build Status](https://travis-ci.org/sindresorhus/fullname.svg?branch=master)](https://travis-ci.org/sindresorhus/fullname)\n\n> Get the fullname of the current user\n\n\n## Install\n\n```\n$ npm install --save fullname\n```\n\nTested on OS X, Linux, and Windows.\n\n\n## Usage\n\n```js\nconst fullname = require('fullname');\n\nfullname().then(name => {\n\tconsole.log(name);\n\t//=> 'Sindre Sorhus'\n});\n```\n\nIn the rare case a name can't be found, you could fall back to [`username`](https://github.com/sindresorhus/username).\n\n\n## Related\n\n- [fullname-cli](https://github.com/sindresorhus/fullname-cli) - CLI for this module\n- [fullname-native](https://github.com/sindresorhus/fullname-native) - Native version of this module\n- [username](https://github.com/sindresorhus/username) - Get the username of the current user\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/fullname.git"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "version": "2.1.0",
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  }
+}

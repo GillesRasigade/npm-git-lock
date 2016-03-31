@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "yosay@https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "yosay@>=0.3.0 <0.4.0",
+  "_id": "yosay@0.3.0",
+  "_inCache": true,
+  "_location": "/yosay",
+  "_phantomChildren": {
+    "has-color": "0.1.7"
+  },
+  "_requested": {
+    "name": "yosay",
+    "raw": "yosay@https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/generator-hubot"
+  ],
+  "_resolved": "https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+  "_shasum": "b3fb7fbe8c45ea8ca90a1b2723c2e0b5bd7ffa38",
+  "_shrinkwrap": null,
+  "_spec": "yosay@https://registry.npmjs.org/yosay/-/yosay-0.3.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "The Yeoman Team"
+  },
+  "bin": {
+    "yosay": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/yeoman/yosay/issues"
+  },
+  "dependencies": {
+    "ansi-regex": "^0.2.1",
+    "ansi-styles": "^1.1.0",
+    "chalk": "^0.4.0",
+    "minimist": "^0.2.0",
+    "pad-component": "0.0.1",
+    "string-length": "^0.1.2",
+    "strip-ansi": "^0.2.1",
+    "taketalk": "^0.1.0",
+    "word-wrap": "^0.1.2"
+  },
+  "description": "Tell Yeoman what to say",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "homepage": "http://yeoman.io",
+  "keywords": [
+    "bin",
+    "cli",
+    "cowsay",
+    "yeoman",
+    "yo"
+  ],
+  "license": "BSD",
+  "name": "yosay",
+  "optionalDependencies": {},
+  "readme": "# yosay [![Build Status](https://travis-ci.org/yeoman/yosay.svg?branch=master)](https://travis-ci.org/yeoman/yosay)\n\n> Tell Yeoman what to say\n\nLike [cowsay](http://en.wikipedia.org/wiki/Cowsay), but less cow.\n\n![](screenshot.png)\n\n\n## Install\n\n```sh\n$ npm install --save yosay\n```\n\n\n## Usage\n\n```js\nvar yosay = require('yosay');\n\nconsole.log(yosay('Hello, and welcome to my fantastic generator full of whimsy and bubble gum!'));\n\n/*\n     _-----_\n    |       |    .--------------------------.\n    |--(o)--|    | Hello, and welcome to my |\n   `---------´   | fantastic generator full |\n    ( _´U`_ )    |   of whimsy and bubble   |\n    /___A___\\    |           gum!           |\n     |  ~  |     '--------------------------'\n   __'.___.'__\n ´   `  |° ´ Y `\n */\n```\n\n*You can style your text with [chalk](https://github.com/sindresorhus/chalk) before passing it to `yosay`.*\n\n\n## CLI\n\n```\n$ npm install --global yosay\n$ yosay --help\n\nUsage\n  $ yosay <string>\n  $ yosay <string> --maxLength 8\n  $ echo <string> | yosay\n\nExample\n  $ yosay 'Sindre is a horse'\n\n     _-----_\n    |       |    .--------------------------.\n    |--(o)--|    |     Sindre is a horse    |\n   `---------´   '--------------------------'\n    ( _´U`_ )\n    /___A___\\\n     |  ~  |\n   __'.___.'__\n ´   `  |° ´ Y `\n```\n\n\n## License\n[BSD license](http://opensource.org/licenses/bsd-license.php)\nCopyright (c) Google\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeoman/yosay.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.3.0"
+}

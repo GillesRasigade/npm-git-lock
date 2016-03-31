@@ -1,0 +1,86 @@
+{
+  "_args": [
+    [
+      "hubot@https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot@>=2.18.0 <3.0.0",
+  "_id": "hubot@2.18.0",
+  "_inCache": true,
+  "_location": "/hubot",
+  "_phantomChildren": {
+    "escape-string-regexp": "1.0.5"
+  },
+  "_requested": {
+    "name": "hubot",
+    "raw": "hubot@https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+  "_shasum": "264a15f5deb4cfd0bc6ef0df5b67a1045e5e4fa4",
+  "_shrinkwrap": null,
+  "_spec": "hubot@https://registry.npmjs.org/hubot/-/hubot-2.18.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "hubot"
+  },
+  "bin": {
+    "hubot": "./bin/hubot"
+  },
+  "bugs": {
+    "url": "https://github.com/github/hubot/issues"
+  },
+  "dependencies": {
+    "async": ">=0.1.0 <1.0.0",
+    "chalk": "^1.0.0",
+    "cline": "^0.8.2",
+    "coffee-script": "1.6.3",
+    "connect-multiparty": "^1.2.5",
+    "express": "^3.21.2",
+    "log": "1.4.0",
+    "optparse": "1.0.4",
+    "scoped-http-client": "0.11.0"
+  },
+  "description": "A simple helpful robot for your Company",
+  "devDependencies": {
+    "chai": "~2.1.0",
+    "coffee-errors": "0.8.6",
+    "hubot-mock-adapter": "^1.0.0",
+    "mocha": "^2.1.0",
+    "mockery": "^1.4.0",
+    "sinon": "~1.17.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "engines": {
+    "node": ">= 0.8.x",
+    "npm": ">= 1.1.x"
+  },
+  "homepage": "https://github.com/github/hubot#readme",
+  "keywords": [
+    "bot",
+    "campfire",
+    "github",
+    "hubot"
+  ],
+  "license": "MIT",
+  "main": "./index",
+  "name": "hubot",
+  "optionalDependencies": {},
+  "readme": "# Hubot\n\nHubot is a chat bot, modeled after GitHub's Campfire bot, hubot. He's pretty\ncool. He's [extendable with scripts](http://hubot.github.com/docs/#scripts) and can work on [many\ndifferent chat services](https://hubot.github.com/docs/adapters/).\n\nThis repository provides a library that's distributed by `npm` that you\nuse for building your own bots.  See the [documentation](http://hubot.github.com/docs)\nfor details on getting up and running with your very own robot friend.\n\nIn most cases, you'll probably never have to hack on this repo directly if you\nare building your own bot. But if you do, check out [CONTRIBUTING.md](CONTRIBUTING.md)\n\nIf you'd like to chat, drop by [#hubot](http://webchat.freenode.net/?channels=#hubot) on FreeNode IRC.\n\n## License\n\nSee the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/hubot.git"
+  },
+  "scripts": {
+    "test": "./script/test"
+  },
+  "version": "2.18.0"
+}

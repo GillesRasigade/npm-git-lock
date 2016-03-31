@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "npm-name@https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "npm-name@>=1.0.1 <2.0.0",
+  "_id": "npm-name@1.2.0",
+  "_inCache": true,
+  "_location": "/npm-name",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "npm-name",
+    "raw": "npm-name@https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/generator-hubot"
+  ],
+  "_resolved": "https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+  "_shasum": "7921fe772d5d2e69e2ce285350a17cf873447d5f",
+  "_shrinkwrap": null,
+  "_spec": "npm-name@https://registry.npmjs.org/npm-name/-/npm-name-1.2.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "sindresorhus@gmail.com",
+    "name": "Sindre Sorhus",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "npm-name": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/npm-name/issues"
+  },
+  "dependencies": {
+    "got": "^5.0.0",
+    "log-symbols": "^1.0.0",
+    "meow": "^3.3.0",
+    "registry-url": "^3.0.0"
+  },
+  "description": "Check whether a package name is available on npm",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "homepage": "https://github.com/sindresorhus/npm-name#readme",
+  "keywords": [
+    "app",
+    "available",
+    "bin",
+    "check",
+    "cli",
+    "cli-app",
+    "name",
+    "npm",
+    "package",
+    "pkg"
+  ],
+  "license": "MIT",
+  "name": "npm-name",
+  "optionalDependencies": {},
+  "readme": "# npm-name [![Build Status](https://travis-ci.org/sindresorhus/npm-name.svg?branch=master)](https://travis-ci.org/sindresorhus/npm-name)\n\n> Check whether a package name is available on npm\n\n\n## Install\n\n```\n$ npm install --save npm-name\n```\n\n\n## Usage\n\n```js\nvar npmName = require('npm-name');\n\nnpmName('chalk', function (err, available) {\n\tconsole.log(available);\n\t//=> false\n});\n```\n\n\n## CLI\n\n<img src=\"https://cloud.githubusercontent.com/assets/170270/8269981/6d394f42-17c4-11e5-8da3-fdb3e251d535.png\" width=\"332\">\n\n```\n$ npm install --global npm-name\n```\n\n```\n$ npm-name --help\n\n  Usage\n    $ npm-name <name>\n\n  Examples\n    $ npm-name chalk\n    ✖ Unavailable\n    $ npm-name unicorn-cake\n    ✔ Available\n\n  Exits with code 0 when the name is available or 2 when taken\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)\n",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/npm-name.git"
+  },
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
+  "version": "1.2.0"
+}

@@ -1,0 +1,82 @@
+{
+  "_args": [
+    [
+      "generator-hubot@https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "generator-hubot@>=0.3.1 <0.4.0",
+  "_id": "generator-hubot@0.3.1",
+  "_inCache": true,
+  "_location": "/generator-hubot",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "generator-hubot",
+    "raw": "generator-hubot@https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+  "_shasum": "f455ea03de91f8a284c005682aac9352609aa409",
+  "_shrinkwrap": null,
+  "_spec": "generator-hubot@https://registry.npmjs.org/generator-hubot/-/generator-hubot-0.3.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "josh@technicalpickles.com",
+    "name": "Josh Nichols",
+    "url": "https://github.com/technicalpickles"
+  },
+  "bugs": {
+    "url": "https://github.com/github/generator-hubot/issues"
+  },
+  "dependencies": {
+    "chalk": "^0.5.0",
+    "npm-name": "^1.0.1",
+    "yeoman-generator": "^0.17.0",
+    "yosay": "^0.3.0"
+  },
+  "description": "Hubot generator for Yeoman",
+  "devDependencies": {
+    "coffee-script": "^1.6.3",
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.12.4",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "generators"
+  ],
+  "homepage": "https://github.com/github/generator-hubot#readme",
+  "keywords": [
+    "hubot",
+    "hubot-script",
+    "yeoman-generator"
+  ],
+  "license": "MIT",
+  "main": "generators/app/index.js",
+  "name": "generator-hubot",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  },
+  "readme": "# generator-hubot\n\nA [Yeoman](http://yeoman.io) generator for creating your own chatbot using the Hubot framework\n\n\n## Installation\n\n- `npm install -g generator-hubot`\n\n## Usage\n\n- `yo hubot`\n\n## Getting Started\n\nSee [Hubot's Getting Started\nguide](https://github.com/github/hubot/blob/master/docs/index.md) for\ndetails on getting up and running with your very own robot friend.\n`generator-hubot` is a replacement for `hubot --create`,\nso you skip that step if you've done `yo hubot` already.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/generator-hubot.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.3.1"
+}

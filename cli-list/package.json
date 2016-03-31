@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      "cli-list@https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "cli-list@>=0.1.1 <0.2.0",
+  "_id": "cli-list@0.1.6",
+  "_inCache": true,
+  "_location": "/cli-list",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "cli-list",
+    "raw": "cli-list@https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+    "rawSpec": "https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/yo"
+  ],
+  "_resolved": "https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+  "_shasum": "5fcf72b8309484b43e0ec4cba46d2b757f17a5e9",
+  "_shrinkwrap": null,
+  "_spec": "cli-list@https://registry.npmjs.org/cli-list/-/cli-list-0.1.6.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "name": "Jamen Marzonie"
+  },
+  "bugs": {
+    "url": "https://github.com/jamen/cli-list/issues"
+  },
+  "dependencies": {},
+  "description": "Break CLI lists into arrays",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.5.0",
+    "del": "^2.2.0",
+    "eslint": "^2.2.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^2.0.0",
+    "tap": "^5.7.0"
+  },
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/jamen/cli-list#readme",
+  "license": "MIT",
+  "main": "lib",
+  "name": "cli-list",
+  "optionalDependencies": {},
+  "private": false,
+  "readme": "# cli-list\n> Break CLI lists into arrays\n\n## Installation\n```shell\n$ npm install --save cli-list\n```\n\n## Usage\n```javascript\nvar list = require('cli-list');\nvar opts = list(process.argv.slice(2));\n```\n\nES6 + Minimist:\n```javascript\nimport list from 'cli-list';\nimport minimist from 'minimist';\nconst opts = list(process.argv.slice(2)).map(item => minimist(item));\n```\n\n## Examples\nGiven:\n```\n$ test foo --bar, baz, --qux\n```\nExpect:\n```\n[['foo', '--bar'], ['baz'], ['--qux']]\n```\n\n## Credits\n| ![jamen][avatar] |\n|:---:|\n| [Jamen Marzonie][github] |\n\n  [avatar]: https://avatars.githubusercontent.com/u/6251703?v=3&s=125\n  [github]: https://github.com/jamen\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamen/cli-list.git"
+  },
+  "scripts": {
+    "build": "gulp",
+    "prepublish": "gulp",
+    "test": "gulp; tap test"
+  },
+  "version": "0.1.6"
+}

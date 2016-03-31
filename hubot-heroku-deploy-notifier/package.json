@@ -1,0 +1,74 @@
+{
+  "_args": [
+    [
+      "hubot-heroku-deploy-notifier@https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-heroku-deploy-notifier@>=0.1.4 <0.2.0",
+  "_id": "hubot-heroku-deploy-notifier@0.1.4",
+  "_inCache": true,
+  "_location": "/hubot-heroku-deploy-notifier",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-heroku-deploy-notifier",
+    "raw": "hubot-heroku-deploy-notifier@https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+  "_shasum": "a60d2f6194a82a4d843d65026b4c416cc52faae1",
+  "_shrinkwrap": null,
+  "_spec": "hubot-heroku-deploy-notifier@https://registry.npmjs.org/hubot-heroku-deploy-notifier/-/hubot-heroku-deploy-notifier-0.1.4.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "patrick.c.connolly@gmail.com",
+    "name": "Patrick Connolly"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-heroku-deploy-notifier/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "mustache": "^0.8.1"
+  },
+  "description": "A hubot script that notifies of heroku app deploys",
+  "devDependencies": {
+    "chai": "*",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "matchdep": "~0.1.2",
+    "mocha": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "homepage": "https://github.com/hubot-scripts/hubot-heroku-deploy-notifier#readme",
+  "keywords": [
+    "deploy",
+    "heroku",
+    "hubot",
+    "hubot-scripts",
+    "notifier",
+    "webhook"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-heroku-deploy-notifier",
+  "optionalDependencies": {},
+  "readme": "# hubot-heroku-deploy-notifier\n\nA hubot script that notifies of heroku app deploys\n\nSee [`src/heroku-deploy-notifier.coffee`](src/heroku-deploy-notifier.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-heroku-deploy-notifier --save`\n\nThen add **hubot-heroku-deploy-notifier** to your `external-scripts.json`:\n\n```json\n[\"hubot-heroku-deploy-notifier\"]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot hello\nhubot>> hello!\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-heroku-deploy-notifier.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "0.1.4"
+}

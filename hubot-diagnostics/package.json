@@ -1,0 +1,71 @@
+{
+  "_args": [
+    [
+      "hubot-diagnostics@https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "hubot-diagnostics@0.0.1",
+  "_id": "hubot-diagnostics@0.0.1",
+  "_inCache": true,
+  "_location": "/hubot-diagnostics",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "hubot-diagnostics",
+    "raw": "hubot-diagnostics@https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+    "rawSpec": "https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+  "_shasum": "69aea01ae4dbdcf0512120c4e33e965ade55262c",
+  "_shrinkwrap": null,
+  "_spec": "hubot-diagnostics@https://registry.npmjs.org/hubot-diagnostics/-/hubot-diagnostics-0.0.1.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "technicalpickles@github.com",
+    "name": "Josh Nichols"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-diagnostics/issues"
+  },
+  "dependencies": {},
+  "description": "hubot scripts for diagnosing hubot",
+  "devDependencies": {
+    "chai": "*",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mocha-test": "~0.7.0",
+    "grunt-release": "~0.6.0",
+    "hubot": "2.x",
+    "matchdep": "~0.1.2",
+    "mocha": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "homepage": "https://github.com/hubot-scripts/hubot-diagnostics#readme",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "license": "MIT",
+  "main": "index.coffee",
+  "name": "hubot-diagnostics",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "hubot": "2.x"
+  },
+  "readme": "# hubot-diagnostics\n\nhubot scripts for diagnosing hubot's current state.\n\nSee [`src/diagnostics.coffee`](src/diagnostics.coffee) for full documentation.\n\n## Installation\n\nIn hubot project repo, run:\n\n`npm install hubot-diagnostics --save`\n\nThen add **hubot-diagnostics** to your `external-scripts.json`:\n\n```json\n[\n  \"hubot-diagnostics\"\n]\n```\n\n## Sample Interaction\n\n```\nuser1>> hubot ping\nhubot>> PONG\nuser1>> hubot time\nhubot>> \n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hubot-scripts/hubot-diagnostics.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "0.0.1"
+}

@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "simple-bufferstream@https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "simple-bufferstream@0.0.4",
+  "_id": "simple-bufferstream@0.0.4",
+  "_inCache": true,
+  "_location": "/simple-bufferstream",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "simple-bufferstream",
+    "raw": "simple-bufferstream@https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+    "rawSpec": "https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/decompress-tar",
+    "/decompress-tarbz2",
+    "/decompress-targz"
+  ],
+  "_resolved": "https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+  "_shasum": "15ca6f45cc70556cc6b6c8433922d7dc3be3f8c5",
+  "_shrinkwrap": null,
+  "_spec": "simple-bufferstream@https://registry.npmjs.org/simple-bufferstream/-/simple-bufferstream-0.0.4.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "authors": [
+    "Rod Vagg <rod@vagg.org> (https://github.com/rvagg)"
+  ],
+  "bugs": {
+    "url": "https://github.com/rvagg/node-simple-bufferstream/issues"
+  },
+  "contributors": [
+    {
+      "name": "Julian Gruber",
+      "email": "julian@juliangruber.com",
+      "url": "https://github.com/juliangruber"
+    }
+  ],
+  "dependencies": {},
+  "description": "Turn a Buffer into a Stream (simplistic version)",
+  "devDependencies": {
+    "bl": "*",
+    "boganipsum": "*",
+    "rimraf": "*",
+    "tape": "*"
+  },
+  "homepage": "https://github.com/rvagg/node-simple-bufferstream",
+  "keywords": [
+    "buffer",
+    "bufferstream",
+    "stream"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "simple-bufferstream",
+  "optionalDependencies": {},
+  "readme": "# Simple BufferStream [![Build Status](https://secure.travis-ci.org/rvagg/node-simple-bufferstream.png)](http://travis-ci.org/rvagg/node-simple-bufferstream)\n\nGive it a Node.js Buffer and it'll give you a Node.js Readable Stream; that's all!\n\nIf you need anything fancier then use [BufferStream](https://github.com/dodo/node-bufferstream), it does splitting and the whole kitchen sink!\n\nA contrived example:\n\n```js\nvar sbuff = require('simple-bufferstream')\n\nsbuff(myBuffer).pipe(fs.createWriteStream('myoutput.dat'))\n```\n\nNot that you'd want to do exactly that but sometimes you need a Buffer to behave as a Stream.\n\n## Licence\n\nSimple BufferStream is Copyright (c) 2012 Rod Vagg [@rvagg](https://twitter.com/rvagg) and licenced under the MIT licence. All rights not explicitly granted in the MIT license are reserved. See the included LICENSE file for more details.",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvagg/node-simple-bufferstream.git"
+  },
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "version": "0.0.4"
+}

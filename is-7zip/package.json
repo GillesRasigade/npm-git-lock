@@ -1,0 +1,72 @@
+{
+  "_args": [
+    [
+      "is-7zip@https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+      "/home/gilles/Documents/development/development-environment"
+    ]
+  ],
+  "_from": "is-7zip@>=1.0.0 <2.0.0",
+  "_id": "is-7zip@1.0.0",
+  "_inCache": true,
+  "_location": "/is-7zip",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "is-7zip",
+    "raw": "is-7zip@https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+    "rawSpec": "https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+    "scope": null,
+    "spec": "https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/archive-type"
+  ],
+  "_resolved": "https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+  "_shasum": "0c7be45ff64cdc3d081be2b7fb1f660cb3106ea6",
+  "_shrinkwrap": null,
+  "_spec": "is-7zip@https://registry.npmjs.org/is-7zip/-/is-7zip-1.0.0.tgz",
+  "_where": "/home/gilles/Documents/development/development-environment",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Mårtensson",
+    "url": "https://github.com/kevva"
+  },
+  "bugs": {
+    "url": "https://github.com/kevva/is-7zip/issues"
+  },
+  "dependencies": {},
+  "description": "Check if a Buffer/Uint8Array is a 7ZIP file",
+  "devDependencies": {
+    "ava": "0.0.4",
+    "read-chunk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/kevva/is-7zip#readme",
+  "keywords": [
+    "7zip",
+    "archive",
+    "buffer",
+    "check",
+    "detect",
+    "type",
+    "uint8array"
+  ],
+  "license": "MIT",
+  "name": "is-7zip",
+  "optionalDependencies": {},
+  "readme": "# is-7zip [![Build Status](https://travis-ci.org/kevva/is-7zip.svg?branch=master)](https://travis-ci.org/kevva/is-7zip)\n\n> Check if a Buffer/Uint8Array is a 7ZIP file\n\n## Install\n\n```sh\n$ npm install --save is-7zip\n```\n\n## Usage\n\n```js\nvar is7zip = require('is-7zip');\nvar read = require('fs').readFileSync;\n\nis7zip(read('foo.7z'));\n// => true\n```\n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Kevin Mårtensson](https://github.com/kevva)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevva/is-7zip.git"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "version": "1.0.0"
+}
